@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: #13b3f2;
+}
+header > div#logo{
+    text-align: center;
+}
+div#menu{
+    padding: 5px 0px 0px 5px;
+}
+div#logo{
+    margin-top: -50px;
+}
+
+section#slide{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 0px !important;
+    overflow: hidden;
+}
+div#slide-conteudo{
+    width: 400%;
+    height: 40%;
+    display: flex;
+}
+
+.img-desktop{ 
+    height: 60%;
+}
+
+div#slide-conteudo > input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box > img{
+    width: 100%;
+}
+
+div#nav-manual, #nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 57%;
+    display: flex;
+    justify-content: center;
+}
+
+div#nav-manual > .manual-btn, #nav-auto > div{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+div#nav-manual > .manual-btn:not(:last-child), #nav-auto > div:not(:last-child){
+    margin-right: 10px;
+}
+div#nav-manual > .manual-btn:hover{
+    background-color: rgb(143, 231, 108);
+}
+
+input#radio1:checked ~ #nav-auto > .auto-btn1 {
+    background-color: rgb(143, 231, 108);
+}
+input#radio2:checked ~ #nav-auto > .auto-btn2 {
+    background-color: rgb(143, 231, 108);
+}
+input#radio3:checked ~ #nav-auto > .auto-btn3 {
+    background-color: rgb(143, 231, 108);
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
