@@ -1,16 +1,14 @@
 
-var radio = document.querySelector('label.manual-btn')
-var cont = 1
+document.querySelector('#radio1').checked = true
+setInterval(passagemauto, 2500)
 
-document.getElementById('radio1').checked = true
+function passagemauto(){
+    cont = 1
 
-setInterval(proximaImg, 2500)
-
-function proximaImg(){
-    cont++
-
-    if (cont>3) {
+    if (querySelector(`#radio`+cont).checked = true){
+        cont++
+    } else{
+        querySelector(`#radio`+cont).checked = true
         cont = 1
     }
-    document.getElementById('radio'+cont).checked = true
 }

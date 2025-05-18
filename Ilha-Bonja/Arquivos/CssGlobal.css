@@ -2,92 +2,107 @@
 
 body{
     margin: 0px;
+    height: 80vh;
 }
 
 header{
     background-color: #13b3f2;
 }
-header > div#logo{
-    text-align: center;
-}
+
 div#menu{
     padding: 5px 0px 0px 5px;
 }
 div#logo{
-    margin-top: -50px;
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    top: 0px;
 }
 
-section#slide{
-    margin: auto;
+section#slide-conteiner{
     width: 100%;
-    height: auto;
-    padding: 0px !important;
-    overflow: hidden;
+    height: 50%;
+    margin: 0px;
+    overflow: ;
 }
-div#slide-conteudo{
+
+div#slide-content{
     width: 400%;
-    height: 40%;
+    height: 100%;
     display: flex;
 }
 
-.img-desktop{ 
-    height: 60%;
-}
-
-div#slide-conteudo > input, .img-mobile{
+div input{
     display: none;
 }
 
 .slide-box{
     width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
+    height: 100%;
 }
 
-.slide-box > img{
+div.slide-box img{ 
     width: 100%;
+    height: 100%;
 }
 
-div#nav-manual, #nav-auto{
+div#nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 57%;
+    padding: 5px;
     display: flex;
     justify-content: center;
+    top: 42%;
 }
 
-div#nav-manual > .manual-btn, #nav-auto > div{
-    border: 1px solid;
+.auto-btn1, .auto-btn2{
+    border: 2.5px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.3s;
-}
-div#nav-manual > .manual-btn:not(:last-child), #nav-auto > div:not(:last-child){
-    margin-right: 10px;
-}
-div#nav-manual > .manual-btn:hover{
-    background-color: rgb(143, 231, 108);
+    margin-right: 15px;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.459);
 }
 
-input#radio1:checked ~ #nav-auto > .auto-btn1 {
-    background-color: rgb(143, 231, 108);
+div#nav-manual{
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    top: 42%;
 }
-input#radio2:checked ~ #nav-auto > .auto-btn2 {
-    background-color: rgb(143, 231, 108);
+
+.manual-btn{
+    border: 2.5px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.459);
 }
-input#radio3:checked ~ #nav-auto > .auto-btn3 {
-    background-color: rgb(143, 231, 108);
+
+.manual-btn:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+    transition: 0.5s;
 }
 
 #radio1:checked ~ .primeiro{
     margin-left: 0%;
+    transition: 2s;
 }
+
 #radio2:checked ~ .primeiro{
     margin-left: -25%;
+    transition: 2s;
 }
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
+
+#radio1:checked ~ #nav-auto .auto-btn1{
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+#radio2:checked ~ #nav-auto .auto-btn2{
+    background-color: rgba(255, 255, 255, 0.658);
 }
