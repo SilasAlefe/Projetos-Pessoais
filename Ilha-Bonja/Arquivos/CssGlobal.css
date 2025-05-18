@@ -3,6 +3,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* para descobrir qual box está estrapolando
+    
+    outline: 1px solid red; 
+    
+    */
 }
 
 body{
@@ -20,7 +25,7 @@ div#menu{
 div#logo{
     position: absolute;
     width: 100%;
-    padding: 5px;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
     top: 0px;
@@ -56,7 +61,6 @@ div.slide-box img.img-desktop{
 div#nav-auto{
     position: absolute;
     width: 100%;
-    padding: 5px;
     display: flex;
     justify-content: center;
     top: 42%;
@@ -69,13 +73,12 @@ div#nav-auto{
     cursor: pointer;
     margin-right: 15px;
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.459);
-    background-color: rgb(184, 146, 146);
+    background-color: rgb(175, 172, 165);
 }
 
 div#nav-manual{
     position: absolute;
     width: 100%;
-    padding: 5px;
     display: flex;
     justify-content: center;
     top: 42%;
@@ -120,8 +123,11 @@ section#barra{
     margin: 0px;
 }
 
-section#botoes{
+section.botoes{
     height: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
 }
 
 .botao{
