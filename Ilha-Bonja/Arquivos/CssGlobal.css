@@ -72,6 +72,7 @@ div#nav-auto{
     border-radius: 50%;
     cursor: pointer;
     margin-right: 15px;
+    margin-left: 10px;
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.459);
     background-color: rgb(175, 172, 165);
 }
@@ -90,6 +91,7 @@ div#nav-manual{
     border-radius: 50%;
     cursor: pointer;
     margin-right: 15px;
+    margin-left: 10px;
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.459);
 }
 
@@ -116,16 +118,24 @@ div#nav-manual{
     background-color: rgba(255, 255, 255, 0.918);
 }
 
+main{
+    height: auto;
+}
+
 section#barra{
     background-color: #50E2F2;
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin: 0px;
 }
 
-section.botoes{
+section#conjunto-botoes{
+    height: 100%;
+}
+
+div.botoes{
     height: auto;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -134,5 +144,95 @@ section.botoes{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 15px;
+}
+
+div.um{
+    padding-bottom: 30px;
+}
+
+div.botoes .um{
+    margin-right: 25px;
+}
+
+div.botoes .dois{
+    margin-left: 25px;
+}
+
+div.botoes .tres{
+    margin-right: 25px;
+}
+
+div.botoes .quarto{
+    margin-left: 25px;
+}
+
+div .txt-botao{
+    padding-bottom: 5px;
+}
+
+section#contato{
+    background-image: linear-gradient(to bottom,#54592fd3, #54592f);
     padding: 10px;
+    display: flex;
+    height: 200px;
+
+}
+
+div#logo-footer{
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+section#contato .dois{
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+section#contato .dois #logo-insta{
+    display: flex;
+}
+
+section#contato .dois #logo-insta a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+}
+
+section#contato .dois #logo-insta a p:hover{
+    text-decoration: underline;
+}
+
+section #fale-conosco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+section #fale-conosco a{
+    text-decoration: none;
+    color: white;
+}
+
+section #fale-conosco a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #54592f;
+}
+
+footer p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    padding-bottom: 5px;
+}
+
+footer span{
+    color: rgb(98, 145, 199);
 }
